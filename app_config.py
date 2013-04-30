@@ -1,0 +1,2 @@
+PROJECT_NAME 	 = 'Test Application'
+GOOGLE_ANALYTICS = 'UA-1234567-8'

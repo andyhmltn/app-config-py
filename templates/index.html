@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hello World!</title>
+	<script type="text/javascript" src="/js/config.js"></script>
+	<script type="text/javascript">
+		window.onload = function() {
+			items = {
+				'title' :'PROJECT_NAME',
+				'google':'GOOGLE_ANALYTICS'
+			};
+			
+			keys = Object.keys(items);
+
+			for(i = 0; i < keys.length; i++) { 
+				document.getElementById(keys[i]).innerHTML = CONFIG[items[keys[i]]];
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1 id="title"></h1>
+	<p>The title above was pulled from app_config.py!</p>
+	<i>Your Google Analytics ID is: <span id="google"></span></i>
+</body>
+</html>
